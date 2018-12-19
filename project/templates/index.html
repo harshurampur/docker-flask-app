@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Datacube Index App">
+    <title>Datacube Index App</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  </head>
+
+  <h1>Datacube Index App!</h1>
+  <body>
+    <form method="POST" action="/">
+      <p> Product Name: <input class="form-control" type="text" name="product_name" style="width: 50%" /></p>
+      <p> Product URL: <input class="form-control" type="text" name="product_url" style="width: 50%" /></p>
+      <input type="submit" value="Add Product">
+    </form>
+  </body>
+</html>
